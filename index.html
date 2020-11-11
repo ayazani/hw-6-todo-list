@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="main.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>HW#6 - ToDo list</title>
+</head>
+<body onload="onPageLoading()">
+<div class="todo">
+    <h1>TODO list</h1>
+    <div class="buttons filter btn-group" role="group" aria-label="Basic example">
+        <button type="button" class="btn btn-secondary" onclick="Module.filterState()">Done</button>
+        <button type="button" class="btn btn-secondary" onclick="Module.filterDateWeek()">Week</button>
+        <button type="button" class="btn btn-secondary" onclick="Module.filterDateTomorrow()">Tomorrow</button>
+    </div>
+    <ul class="list list-group list-group-flush"></ul>
+    <div class="buttons">
+        <div><button class="save btn btn-light" onclick="Module.saveData()">Сохранить</button></div>
+        <div class="input-group">
+            <div class="input-group-prepend">
+                <span class="input-group-text">Задача и дедлайн</span>
+            </div>
+            <input type="text" aria-label="Задача" class="form-control">
+            <input type="date" aria-label="Дедлайн" class="form-control">
+            <button class="add btn btn-outline-success" onclick="Module.addData()">Добавить</button>
+        </div>
+    </div>
+</div>
+</body>
+</html>

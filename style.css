@@ -1,0 +1,21 @@
+.date {
+    margin-left: 1%;
+}
+.todo{
+    width: 50%;
+    margin-left: 25%;
+    margin-top: 10%;
+}
+.delete {
+    margin: 0 0 0 5%;
+}
+.checkbox{
+    margin: 0 0 0 5%;
+}
+.save{
+    margin: 2% 0 2% 0;
+}
+.add{
+    margin-left: 1%;
+}
+
